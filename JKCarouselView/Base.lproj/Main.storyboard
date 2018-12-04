@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J76-7G-4WF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VOc-GQ-waf">
+            <objects>
+                <viewController id="lrf-98-LbH" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktC-DS-6Kc"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDh-xI-p9w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBs-fa-MHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0o-K1-DIN" customClass="JKCarouselView">
+                                <rect key="frame" x="0.0" y="447" width="375" height="180"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="bcz-gu-RG8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="N0o-K1-DIN" secondAttribute="bottom" constant="40" id="IBH-yQ-Chn"/>
+                            <constraint firstItem="N0o-K1-DIN" firstAttribute="leading" secondItem="fBs-fa-MHM" secondAttribute="leading" id="U13-hX-img"/>
+                            <constraint firstAttribute="trailing" secondItem="N0o-K1-DIN" secondAttribute="trailing" id="VCx-KC-K3f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aUb-mS-dlD"/>
+                    <connections>
+                        <outlet property="carouselView1" destination="N0o-K1-DIN" id="hkC-fa-30I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggO-bW-eFf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511.1999999999998" y="-672.41379310344837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3M0-fV-zR1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J76-7G-4WF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FGd-GF-b5F">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lrf-98-LbH" kind="relationship" relationship="rootViewController" id="0GV-fI-U3d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTL-f8-DaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-672.41379310344837"/>
+        </scene>
+    </scenes>
+</document>
