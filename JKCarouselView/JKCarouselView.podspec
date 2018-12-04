@@ -13,8 +13,8 @@ s.platform     = :ios, "8.0"
 s.source       = { :git => "https://github.com/JokerKin/JKCarouselView.git", :tag => s.version }
 
 
-s.source_files  = "JKCarouselView/*.{h,m}"
-s.resources = "XRCarouselView/JKCarouselView.png"
+s.source_files  = "JKCarouselView/**/JKCarouselView.{h,m}"
+s.resources = "JKCarouselView/**/JKPlaceholder.png"
 s.requires_arc = true
 
 end
